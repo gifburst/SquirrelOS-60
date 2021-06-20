@@ -4,8 +4,10 @@ color B0
 cls
 :start
 cls
-echo     ABOUT   FILE   APPS   HELP
+color B0
+echo     ABOUT   APPS   HELP   UPDATES
 color 80
+echo.
 echo.                                                 
 echo.
 echo.              
@@ -28,19 +30,39 @@ echo.
 echo.
 echo.
 echo.
-echo   ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
-echo   º                                                            º
-echo   º                                                            º
-echo   ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
 set /p udefine= Type your input:
-if %udefine%==ABOUT1 goto about
-if %udefine%==ABOUT2 goto SLP
-if %udefine%==ABOUT3 goto sltp
-if %udefine%==GLOSSARY goto gloss
-if %udefine%==TIPS goto tip
-if %udefine%==LOG goto log
-if %udefine%==EDIT goto edit
-if %udefine%==s goto enter
-if %udefine%==? goto help
-if %udefine%==q goto exit
+if %udefine%==ABOUT goto about
+if %udefine%==APPS goto APP
+if %udefine%==HELP goto HELP
+if %udefine%==UPDATES goto up
 
+
+:about
+color B0
+cls
+echo     ABOUT   APPS   HELP   UPDATES
+color 8F
+echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+echo º                                                                                                 X º
+echo ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+echo º     WELCOME TO SquirrelOS                             
+echo º  ..........    ####(         
+echo º .............  ########      
+echo º .............  ###########   
+echo º  ...........################ 
+echo º    .......###################
+echo º      ..%##########((#########
+echo º      .############(((((#     
+echo º       ##############((((/    
+echo º       *###############(((    
+echo º        %##############              
+echo º       
+echo º THIS VERSION IS: 1.0 RELEASED 30/06/2021   
+echo º    
+echo º             
+echo º          
+echo º               
+echo º
+echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+set /p udefine= Type your input:
+if %udefine%==X goto start
