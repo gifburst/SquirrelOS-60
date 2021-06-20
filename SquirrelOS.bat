@@ -2,6 +2,25 @@
 title SquirrelOS
 color B0
 cls
+:begining
+cls                                                             
+echo    ,,,,,,,,     ((((
+echo  ,,,,,,,,,,,,.  ((((( 
+echo  ,,,,,,,,,,,,,  ((((((( ((                         @@@
+echo  ,,,,,,,,,,,,,((((((((((((((     @@@@@@@@@@@    @@@@@@@@@@
+echo    ,,,,,,,,,(((((((((((((((((( @@@@       @@@@ @@@@      @
+echo      ,,,,,((###(((((((((((((((@@@@         @@@@ @@@@@
+echo       ,##########((((((((*((  @@@@         @@@@   @@@@@
+echo        (###(###(##(((((((      @@@/        @@@@     @@@@
+echo        (##########((((((((     @@@@@      @@@@@@@  @@@@@
+echo          ######(#####(           @@@@@@@@@@@.  @@@@@@@
+echo           ((#######(#                                      1.0
+echo    Welcome To SquirrelOS 1.0
+echo.
+pause
+goto set
+
+
 :set
 echo The defult colour is grey = 80
 echo 0 = Black
@@ -63,7 +82,7 @@ if %udefine%==SETTINGS goto set
 :about
 color B0
 cls
-echo    (ABOUT)  APPS   HELP   UPDATES
+echo    (ABOUT)  APPS   HELP   UPDATES   SETTINGS
 color %color%
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
 echo º                                                                 X º
@@ -94,12 +113,13 @@ if %udefine%==ABOUT goto about
 if %udefine%==APPS goto APP
 if %udefine%==HELP goto HELP
 if %udefine%==UPDATES goto up
+if %udefine%==SETTINGS goto set
 
 
 :APP
 color B0
 cls
-echo     ABOUT  (APPS)  HELP   UPDATES
+echo     ABOUT  (APPS)  HELP   UPDATES   SETTINGS
 color %color%
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
 echo º                                                                 X º
@@ -129,12 +149,13 @@ if %udefine%==CLOCK goto clock
 if %udefine%==CALCULATOR goto calc
 if %udefine%==CHESS goto chess
 if %udefine%==TERMINAL goto term
+if %udefine%==SETTINGS goto set
 
 
 :APP
 color B0
 cls
-echo     ABOUT   APPS  (HELP)  UPDATES
+echo     ABOUT   APPS  (HELP)  UPDATES   SETTINGS
 color %color%
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
 echo º                                                                 X º
@@ -158,13 +179,14 @@ if %udefine%==X goto start
 if %udefine%==ABOUT goto about
 if %udefine%==APPS goto APP
 if %udefine%==UPDATES goto up
+if %udefine%==SETTINGS goto set
 
 
 
 :APP
 color B0
 cls
-echo     ABOUT   APPS   HELP  (UPDATES)
+echo     ABOUT   APPS   HELP  (UPDATES)   SETTINGS
 color %color%
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
 echo º                                                                 X º
@@ -183,3 +205,4 @@ if %udefine%==X goto start
 if %udefine%==ABOUT goto about
 if %udefine%==APPS goto APP
 if %udefine%==UPDATES goto up
+if %udefine%==SETTINGS goto set
